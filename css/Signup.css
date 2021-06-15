@@ -1,0 +1,169 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+.error{
+  margin-left: -2rem;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.container {
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  padding: 0;
+}
+
+header {
+  background: #CAC531;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo{
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+.logo svg{
+  width: 100%;
+}
+header .headerContainer {
+  display: block;
+  background: #645F5F;
+  width: 80%;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+
+.mainIncludeAndImge{
+  display: flex;
+}
+.mainIncludeAndImge .form{
+ flex: 1;
+ height: 100%;
+ /* padding-top: 3rem; */
+}
+.mainIncludeAndImge .form form p{
+  color: #fff;
+  /* width: 80%; */
+  margin: 0 auto;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+.mainIncludeAndImge .form form p a{
+  color: #fff;
+  text-decoration: underline;
+}
+.mainIncludeAndImge .form h2{
+  text-transform: uppercase;
+  text-align: center;
+  color: #CAC531;
+}
+.mainIncludeAndImge .form form {
+  padding: 1rem 4rem;
+}
+.mainIncludeAndImge .form .fn_ln_input{
+  display: flex;
+}
+.mainIncludeAndImge .form .fn_ln_input input{
+  flex: 1;
+  padding: 1.2rem 1.8rem;
+  border-radius: 5px;
+  border: none;
+}
+.mainIncludeAndImge .form .fn_ln_input input:first-child{
+  margin-right: 1rem;
+}
+.mainIncludeAndImge .form .input{
+  border-radius: 5px;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 1.2rem 1.8rem;
+  margin: 1.5rem 0;
+}
+.mainIncludeAndImge .form .cin_birth_inputs{
+  display: flex;
+}
+.mainIncludeAndImge .form .cin_birth_inputs .cin{
+  flex: 1;
+  margin-right: 1rem;
+  padding: 1.2rem 1.8rem;
+  border-radius: 5px;
+  border: none;
+  display: block;
+}
+.gender{
+  border-radius: 5px;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 1rem 1.8rem;
+  margin: 1.5rem 0;
+}
+.mainIncludeAndImge .form .cin_birth_inputs .birthday{
+  flex: 1;
+  display: flex;
+}
+.mainIncludeAndImge .form .cin_birth_inputs .birthday input{
+  width: 10rem;
+  padding: 1rem .5rem;
+  margin-left: .5rem;
+  border-radius: 5px;
+  border: none;
+}
+.mainIncludeAndImge .form form .submit{
+  border: none;
+  padding: 1.4rem 1.8rem;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #CAC531;
+  cursor: pointer;
+  color: #645F5F;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.mainIncludeAndImge .img{
+  flex: 1;
+  height: 100%;
+}
+.mainIncludeAndImge .img img{
+  width: 100%;
+  height: 90vh;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}

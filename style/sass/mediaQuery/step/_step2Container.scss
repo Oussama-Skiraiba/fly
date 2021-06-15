@@ -1,0 +1,82 @@
+@media(min-width: 320px) and (max-width:576px) {
+    .catrContainer{
+        // min-height: 100em !important;
+        h2 {
+            font-size: 2rem !important;
+        }
+        .passportInfo {
+            width: 70vw !important;
+            // height: 60em !important;
+            .paddingInfp {
+                display: block !important;
+                .info__1 {
+                    span {
+                        margin: 2rem 1rem !important;
+                    }
+                    input {
+                        &:not(:first-of-type){
+                            width: 61vw !important;
+                            margin: 1rem 0 !important;
+                        }
+                        
+                    }
+                    select {
+                        width: 61vw !important;
+                        margin: 2rem 0 !important;
+                    }
+                }
+                
+                .dateInfoPassport {
+                    input {
+                        width: 61vw !important;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+// @media(min-width: 768px) and (max-width:991px)
+@media(min-width: 576px) and (max-width:991px) {
+
+    .catrContainer{
+        // min-height: 100em !important;
+        display: block !important;
+
+
+    .passportInfo {
+            width: 70vw !important;
+            // height: 60em !important;
+            .paddingInfp {
+                display: block !important;
+                .info__1 {
+                    span {
+                        margin: 2rem 1rem !important;
+                    }
+                    input {
+                        &:not(:first-of-type){
+                            display: block !important;
+                            width: 61vw !important;
+                            margin: 1rem 0 !important;
+                        }
+                        
+                    }
+                    select {
+                        width: 61vw !important;
+                        margin: 2rem 0 !important;
+                    }
+                }
+                
+                .dateInfoPassport {
+                    input {
+                        width: 61vw !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media(min-width: 768px) and (max-width:991px)

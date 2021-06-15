@@ -1,0 +1,355 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html {
+  font-size: 10px;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.container {
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html {
+  font-size: 10px;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.container {
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  background: #050A30;
+  width: 100%;
+  height: 20vh;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 50% 30%;
+      grid-template-columns: 20% 50% 30%;
+  padding: 1rem;
+  top: 0;
+}
+
+header .logo img {
+  width: 39%;
+  margin-left: 2rem;
+}
+
+header .search {
+  position: relative;
+  padding-top: 3rem;
+}
+
+header .search .images {
+  width: 40%;
+  position: absolute;
+  right: -27%;
+  top: 27%;
+}
+
+header .search .images img {
+  width: 10%;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: .2rem;
+  margin-left: .7rem;
+}
+
+header .search .images::after {
+  content: "";
+  position: absolute;
+  top: -6%;
+  right: 82%;
+  background: #CAC531;
+  width: 58px;
+  height: 39px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+header .search input {
+  width: 90%;
+  margin-left: 3rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+header .search .showData {
+  background: red;
+  width: 89%;
+  margin: 1rem 0 0 4rem;
+  border-radius: 10px;
+  display: none;
+}
+
+header .search .showData span {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header .search .showData span:hover {
+  background: purple;
+}
+
+header .loginAdmin {
+  padding-top: 3rem;
+  position: relative;
+}
+
+header .loginAdmin span {
+  margin-left: 19rem;
+  font-size: 2rem;
+  padding-top: 1rem;
+  display: block;
+}
+
+header .loginAdmin img {
+  position: absolute;
+  width: 60px;
+  border-radius: 50%;
+  height: 60px;
+  left: 27%;
+  top: 21px;
+}
+
+.main {
+  position: fixed;
+  width: 11%;
+  background: #050A30;
+  height: 80vh;
+  top: 20%;
+  color: #fff;
+}
+
+.main .mainContainer {
+  padding: 1rem;
+  margin: 2rem auto 1rem;
+}
+
+.main .mainContainer .dashboard, .main .mainContainer .listView, .main .mainContainer .sitting {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.main .mainContainer .dashboard img, .main .mainContainer .listView img, .main .mainContainer .sitting img {
+  width: 15%;
+}
+.dashboard span {
+  margin-left: 0 !important;
+}
+.main .mainContainer .dashboard span, .main .mainContainer .listView span, .main .mainContainer .sitting span {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.main .mainContainer .dis {
+  display: block !important;
+  -webkit-transition: display .3s ease-in-out;
+  transition: display .3s ease-in-out;
+}
+
+.main .mainContainer .items {
+  display: none;
+  background: #fff;
+  background: #CAC531;
+  margin: 1rem 0;
+  border-radius: 4px;
+  position: relative;
+}
+
+.main .mainContainer .items::after {
+  position: absolute;
+  content: "";
+  top: -20px;
+  right: 20px;
+  border: 10px solid;
+  border-color: transparent transparent #CAC531 transparent;
+}
+
+.main .mainContainer .items a {
+  position: relative;
+  color: #fff;
+  display: block;
+  margin-left: 5rem;
+  font-size: 2rem;
+}
+
+.main .mainContainer .items a:hover {
+  color: #333;
+  -webkit-transition: color .4s ease-in;
+  transition: color .4s ease-in;
+}
+
+.main .mainContainer .items a::after {
+  position: absolute;
+  content: "";
+  border: 3px solid #fff;
+  border-radius: 50%;
+  left: -25px;
+  top: 11px;
+  width: 15px;
+  height: 15px;
+}
+
+.main .logOut {
+  position: absolute;
+  bottom: 10%;
+  left: 6px;
+}
+
+.main .logOut img {
+  position: absolute;
+  width: 20%;
+  top: 10%;
+  margin-top: .2rem;
+}
+
+.main .logOut a {
+  width: 145px;
+  background: #CAC531;
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  text-align: right;
+  font-size: 2.2rem;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-right: 3rem;
+}
+
+.remove {
+  margin: 9rem 19rem 3rem;
+  background: #252D69;
+  margin-top: 17rem;
+  margin-left: 29rem;
+  background: #252D69;
+  width: 70%;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+
+.remove h2 {
+  color: #fff;
+  padding: 20px 0;
+  margin-left: 40px;
+}
+
+.remove hr {
+  border: 0.1px solid rgba(190, 190, 190, 0.335);
+}
+
+.remove .content-remove {
+  width: 90%;
+  min-height: 1px;
+  margin: 1rem auto;
+}
+
+.remove .content-remove .head, .remove .content-remove .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.remove .content-remove .head > div, .remove .content-remove .row > div {
+  cursor: pointer;
+  width: 95%;
+  background: #CAC531;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+}
+
+.remove .content-remove .row {
+  padding: 5px 0;
+}
+
+.remove .content-remove .row > div {
+  color: #000000e3;
+  background: #f3e5e5;
+}
+
+
+
+#admin_logout{
+  padding: 8px 19px;
+  font-size: 18px;
+  margin-left: 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+#admin_logout:hover{
+  background-color: #fff;
+  color: #333;
+  transition: .4s;
+}

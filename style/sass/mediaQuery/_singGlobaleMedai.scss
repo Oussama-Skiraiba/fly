@@ -1,0 +1,71 @@
+@media(min-width: 320px) and (max-width:576px){
+    .logo {
+        img {
+            width: 17% !important;
+        }
+    }
+    header {
+        height: 145vh !important;
+        .headerContainer {
+            height: 130vh !important;
+            top: 29% !important;
+            left: 28% !important;
+            width: 74% !important;
+            
+            .imge {
+                img {
+                    display: none;
+                }
+            }
+        }
+        .singUp {
+            .singUpContainer {
+                h2 {
+                    font-size: 2.5 rem !important;
+                }
+                span {
+                    color: $white;
+                    
+                }
+                .input1,.input2 {
+                    // width: 100% !important;
+                    width: 66vw !important;
+                    &:not(:first-of-type){
+                        margin-left: 0 !important;
+                    }
+                }
+                .__num{
+                    width: 46% !important;
+                    margin-left: .5rem;
+                }
+                input{
+                    width: 99% !important;
+                    padding: 10px !important;
+                    margin-bottom: 3rem;
+                    border: 1px solid $white;
+                    border-radius: 10px;
+                    font-size: 1.5rem;
+                }
+                .gender {
+                    input{
+                        margin-left: 0 !important;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media(min-width: 576px) and (max-width:991px) {
+    .imge {
+        img {
+            height: 654px !important;
+        }
+    }
+    .gender {
+        input{
+            margin-left: 0 !important;
+        }
+    }
+}

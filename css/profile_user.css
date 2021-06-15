@@ -1,0 +1,262 @@
+.main_profile{
+    display: flex;
+    margin-top: 8rem;
+    padding: 0 5rem;
+    margin-bottom: 8rem;
+}
+.main_profile_left{
+    flex: 2;
+    margin-right: 5rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 3rem;
+    background-color: #333;
+    color: #fff;
+}
+.main_profile_left h2{
+    color: #fff;
+    margin-top: 1rem;
+}
+.details_container{
+    position: relative;
+    display: flex;
+    margin-top: 4rem;
+    border-top: 2px solid #fff;
+    padding-top: 2rem;
+}
+.details_img{
+    flex: 1;
+    text-align: center;
+}
+.details_img img{
+    width: 25rem;
+    height: 25rem;
+    border: 4px solid #fff;
+    border-radius: 100%;
+}
+.details_info{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+.details_info ul{
+    margin-left: 4rem;
+    margin-top: 2rem;
+    
+}
+.details_info ul li{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 1rem 0;
+}
+.passport{
+    margin-top: 4rem;
+    border-top: 2px solid #fff;
+}
+.passport ul li{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 1rem 0;
+}
+.main_profile_right{
+    flex: 1.2;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.main_profile_right h1{
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    padding-bottom: 42px;
+}
+.flights_con{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 2px solid #333;
+    padding-bottom: 16px;
+}
+.flight{
+    display: flex;
+    margin-top: 10px;
+}
+.flight_left{
+    flex: 1;
+}
+.flight_right{
+flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start style for profile setting */
+
+
+.pro_setting_container{
+    width: 80%;
+    margin: 10rem auto 0 auto;
+    border: 2px solid #333;
+    padding: 4rem 10rem;
+    background-color: #333;
+}
+
+
+
+/* edit_info */
+/* .edit_info input{
+    padding: 10px 16px;
+    background-color: #CAC531;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    font-style: bold;
+    font-size: 1.9rem;
+    cursor: ;
+} */
+
+
+.edit_icon{
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+}
+
+
+.pro_setting_title{
+    color: #fff;
+    font-size: 1.9rem;
+}
+.pro_setting_img{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+.pro_setting_container .pro_setting_img_container{
+    display: inline-block;
+    width: 16rem;
+    height: 16rem;
+}
+
+.pro_setting_container .pro_setting_img_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 2px solid #fff;
+
+}
+.pro_setting_container .pro_setting_img .file{
+    margin-top: 5rem;
+   color: #fff;
+}
+.pro_setting_container .pro_setting_img .save_btn{
+    padding: .8rem 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+}
+.pro_setting_container .pro_setting_img .save_btn:hover{
+    color: #333;
+    background: #fff;
+}
+
+.pro_setting_info{
+    padding: 4rem 0;
+
+}
+.update_user{
+    margin: .5rem 0;
+    display: flex;
+}
+.pro_setting_info .update_user .label{
+    color: #fff;
+    font-size: 1.7rem;
+    flex: 2;
+}
+.pro_setting_info .update_user .input{
+    width: 30rem;
+    margin-left: 5rem;
+    padding: .5rem 1rem;
+    flex: 4;
+}
+
+.update_btn{
+    padding: .8rem 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+}
+.update_btn:hover{
+    color: #333;
+    background: #fff;
+}
+.update_btn_container{
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.pp_title{
+    margin: 2rem 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

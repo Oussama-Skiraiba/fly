@@ -1,0 +1,43 @@
+@import "../sab/body";
+@import "../varaible/colore";
+.logo {
+    position: relative;
+    height: 0;
+    img {
+        position: absolute;
+        width: 6%;
+        padding-top: 2rem;
+        left: 2%;
+        cursor: pointer;
+    }
+}
+header {
+    background: $HeaderBackground;
+    width: 100%;
+    height: 95vh;
+    .headerContainer {
+        // background: #9BA1B1;
+        background: #74808C;
+        width: 80%;
+        height: 80vh;
+        position: absolute;
+        top: 19%;
+        left: 14%;
+        transform: translate(-50px, -50px);
+        border-radius: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        .mainIncludeAndImge {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            .imge {
+                margin-left: 1rem;
+                img {
+                    height: 555px;
+                    width: 100%;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+            }
+        }
+    }
+}

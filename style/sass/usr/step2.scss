@@ -1,0 +1,81 @@
+@import "../sab/body";
+@import "../step/StepHeader";
+@import "../step/StepMain";
+@import "../step/StepFotter";
+@import "../mediaQuery/step/HeaderStepMedia";
+@import "../mediaQuery/step/step2Container";
+
+.cartGrid {
+    margin: 1rem;
+    
+    .passport {
+        .infpSpan {
+            font-size: 2rem;
+            color: $white;
+            display: block;
+            margin-left: 2rem;
+        }
+        
+        .passportInfo{
+        
+            .paddingInfp {
+                padding: 1rem;
+                display: grid;
+                grid-template-columns: auto auto;
+                margin: 1rem;
+                .info__1 {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    // background-color: red;
+                    span {
+                        font-size: 2rem;
+                        color: $white;
+                        margin: 0 1rem;
+                    }
+                    input{
+                        &:not(:first-of-type){
+                            width: 45%;
+                            padding: 10px 15px;
+                            border: 1px solid $Border;
+                            border-radius: 10px;
+                            margin-right: 1rem;
+                            background: $FotterBackgroundSocialMedia;
+                            color: $white;
+                            font-size: 2rem;
+                            &:placeholder-shown{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                    select {
+                        width: 19%;
+                        padding: 10px;
+                        border-radius: 10px;
+                        font-size: 1.5rem;
+                    }
+                }
+                .dateInfoPassport {
+                    margin-top: 2rem;
+                    span {
+                        font-size: 2rem;
+                        color: #fff;
+                        margin: 0 1rem;
+                    }
+                    input {
+                        width: 45%;
+                            padding: 10px 15px;
+                            border: 1px solid $Border;
+                            border-radius: 10px;
+                            margin-right: 1rem;
+                            background: $FotterBackgroundSocialMedia;
+                            color: $white;
+                            font-size: 2rem;
+                            &:placeholder-shown{
+                                font-size: 2rem;
+                            }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,186 @@
+@import "../varaible/colore";
+@import "../sab/body";
+html {
+    padding: 0;
+}
+header {
+    position: fixed;
+    background: $BackgourndAdmin;
+    width: 100%;
+    height: 20vh;
+    color: $white;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    padding: 1rem;
+    top: 0;
+    .logo {
+        img{
+            width: 39%;
+            margin-left: 2rem;
+        }
+    }
+    .search {
+        position: relative;
+        padding-top: 3rem;
+        .images {
+            width: 40%;
+            position: absolute;
+            right: -27%;
+            top: 27%;
+            img{
+                width: 10%;
+                position: relative;
+                z-index: 1;
+                cursor: pointer;
+                margin-top: .2rem;
+                margin-left: .7rem;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: -6%;
+                right: 82%;
+                background: $HeaderBackground;
+                width: 58px;
+                height: 39px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+
+            }
+        }
+        input{
+            width: 90%;
+            margin-left: 3rem;
+            padding: 10px 15px;
+            border-radius: 10px;
+            
+            
+        }
+
+        .showData {
+            background: red;
+            width: 89%;
+            // height: 100%;
+            margin: 1rem 0 0 4rem;
+            border-radius: 10px;
+            display: none;
+            span {
+                display: block;
+                margin: 1rem;
+                padding: 1rem;
+                cursor: pointer;
+                transition: .4s;
+                &:hover {
+                    background: purple;
+                }
+            }
+        }
+    }
+    .loginAdmin {
+        padding-top: 3rem;
+        position: relative;
+        span{
+            margin-left: 19rem;
+            font-size: 2rem;
+            padding-top: 1rem;
+            display: block;
+        }
+        img {
+            position: absolute;
+            width: 125px;
+            border-radius: 50%;
+            height: 125px;
+            top: -3px;
+            }
+        }
+    
+}
+
+.main {
+    position: fixed;
+    width: 11%;
+    background: #050A30;
+    height: 80vh;
+    top: 20%;
+    color: $white;
+    .mainContainer  {
+        padding:1rem;
+        margin: 2rem auto 1rem;
+        .dashboard,.listView, .sitting {
+            margin: 1rem 0;
+            cursor: pointer;
+            img{
+                width: 15%;
+            }
+            span{
+                margin-left: 1rem;
+                font-size: 2rem;
+            }
+        }
+        .dis {
+            display: block !important;
+            transition: display .3s ease-in-out;
+        }
+        .items {
+            display: none;
+            background: $white; 
+            background: $HeaderBackground;
+            margin: 1rem 0;
+            border-radius: 4px;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                top: -20px;
+                right: 20px;
+                border: 10px solid;
+                border-color: transparent transparent $HeaderBackground transparent
+            }
+            a {
+                position: relative;
+                color: $white;
+                display: block;
+                margin-left: 5rem;
+                font-size: 2rem;
+                &:hover {
+                    color: #333;
+                    transition: color .4s ease-in;
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    border: 3px solid #fff;
+                    border-radius: 50%;
+                    left: -25px;
+                    top: 11px;
+                    width: 15px;
+                    height: 15px;
+                }
+                
+            }
+        }
+    }
+    .logOut {
+        position: absolute;
+        bottom: 10%;
+        left: 6px;
+        img{
+            position: absolute;
+            width: 20%;
+            top: 10%;
+            margin-top: .2rem;
+        }
+        a {
+            width: 145px;
+            background: $HeaderBackground;
+            color: #fff;
+            border-radius: 10px;
+            display: block;
+            text-align: right;
+            font-size: 2.2rem;
+            padding: 5px 10px;
+            font-weight: bold;
+            margin-right: 3rem;
+            }
+        }
+}

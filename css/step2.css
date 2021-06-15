@@ -1,0 +1,562 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html {
+  font-size: 10px;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.container {
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+}
+
+header .custom-shape-divider-top-1619315220 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: -1;
+}
+
+header .custom-shape-divider-top-1619315220 svg {
+  position: relative;
+  display: block;
+  width: calc(133% + 1.3px);
+  height: 180px;
+}
+
+header .custom-shape-divider-top-1619315220 .shape-fill {
+  fill: #CAC531;
+}
+
+header .navBare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  margin: 0 1rem;
+}
+
+header .navBare .imagesLogo {
+  position: absolute;
+  left: 20px;
+}
+
+header .navBare .imagesLogo img {
+  height: 95px;
+}
+
+header .navBare nav {
+  width: 40%;
+  margin: auto;
+}
+
+header .navBare nav .menu {
+  display: none;
+}
+
+header .navBare nav .show {
+  right: -56%;
+  background: #494845;
+  -webkit-box-shadow: 0px 0px 5px #252020;
+          box-shadow: 0px 0px 5px #252020;
+  z-index: 10;
+}
+
+header .navBare nav ul {
+  margin: 0;
+  text-align: center;
+}
+
+header .navBare nav ul li {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 9rem;
+}
+
+header .navBare nav ul li a {
+  color: #333333;
+}
+
+header .navBare span {
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+  color: #333333;
+  margin-top: 1rem;
+}
+
+header .navBare .usrImages {
+  width: 16%;
+}
+
+header .navBare .usrImages img {
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  float: right;
+  margin-right: 6rem;
+}
+
+.stepBorder {
+  display: inline-block;
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2rem;
+  position: relative;
+}
+
+.stepBorder .st {
+  color: #fff;
+}
+
+.stepBorder span {
+  border-radius: 50%;
+  background: #707070;
+  color: #333333;
+  border: 1px solid #707070;
+  margin: 0 1rem;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stepBorder span::after {
+  content: "";
+  position: absolute;
+  height: 30%;
+  border-bottom: 5px solid #707070;
+  border-radius: 3px;
+  right: 17.5%;
+  z-index: -1;
+  width: 65%;
+}
+
+.catrContainer {
+  width: 90%;
+  min-height: 60vh;
+  background: #645F5F;
+  margin: 4rem auto 2rem;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(100, 95, 95, 0.16) 0px 3px 6px, rgba(100, 95, 95, 0.23) 0px 3px 6px;
+          box-shadow: rgba(100, 95, 95, 0.16) 0px 3px 6px, rgba(100, 95, 95, 0.23) 0px 3px 6px;
+}
+
+.catrContainer h2 {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #CAC531;
+  padding-top: 2rem;
+}
+
+.next {
+  position: absolute;
+  right: 10%;
+  width: 150px;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  background: #CAC531;
+  color: #fff;
+  -webkit-transition: -webkit-transform .7s ease-in;
+  transition: -webkit-transform .7s ease-in;
+  transition: transform .7s ease-in;
+  transition: transform .7s ease-in, -webkit-transform .7s ease-in;
+  text-align: center;
+  z-index: 10;
+}
+
+.next:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.next:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+footer {
+  position: relative;
+}
+
+footer .custom-shape-divider-bottom-1619414709 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: -1;
+}
+
+footer .custom-shape-divider-bottom-1619414709 svg {
+  position: relative;
+  display: block;
+  width: calc(132% + 1.3px);
+  height: 180px;
+}
+
+footer .custom-shape-divider-bottom-1619414709 .shape-fill {
+  fill: #CAC531;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  header .custom-shape-divider-top-1619315220 svg {
+    height: 118px !important;
+  }
+  header .navBare .imagesLogo {
+    left: -9px !important;
+  }
+  header .navBare .imagesLogo img {
+    height: 60px !important;
+  }
+  header .navBare nav {
+    position: relative;
+  }
+  header .navBare nav .menu {
+    position: absolute;
+    right: -70px;
+    top: 7px;
+    display: block !important;
+  }
+  header .navBare nav .menu img {
+    height: 30px;
+  }
+  header .navBare nav ul {
+    position: absolute;
+    width: 160px;
+    top: 45px;
+    opacity: 0;
+    display: none;
+    text-align: center;
+    z-index: -2;
+    min-height: 208px;
+  }
+  header .navBare nav ul::after {
+    position: absolute;
+    content: "";
+    top: -20px;
+    right: 0;
+    border: 10px solid;
+    border-color: transparent transparent #494845 transparent;
+  }
+  header .navBare nav ul li {
+    font-size: 2rem !important;
+    font-weight: bold;
+    margin-right: 0 !important;
+  }
+  header .navBare nav ul li a {
+    color: #fff;
+  }
+  header .navBare .nameUser {
+    display: block !important;
+  }
+  header .navBare span {
+    font-size: 2.5rem !important;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 1rem;
+    position: absolute;
+    top: 188px;
+    color: #fff;
+    z-index: 10;
+    left: 100px;
+    display: none;
+  }
+  header .navBare .imagesUser {
+    display: block !important;
+  }
+  header .navBare .usrImages {
+    display: none;
+    position: absolute;
+    top: 131px;
+    left: 55%;
+    z-index: 10;
+  }
+  header .navBare .usrImages img {
+    width: 60px !important;
+    border-radius: 50%;
+    height: 60px !important;
+    float: right;
+    margin-right: 0 !important;
+  }
+  .stepBorder {
+    margin-top: 13rem !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  header .navBare .imagesLogo {
+    left: 0 !important;
+  }
+  header .navBare nav {
+    width: auto !important;
+  }
+  header .navBare nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: 5rem !important;
+  }
+  header .navBare nav ul li {
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+    font-size: 2rem !important;
+  }
+  header .navBare span {
+    font-size: 2rem !important;
+    margin-right: 2rem !important;
+    margin-top: 3rem !important;
+  }
+  header .navBare .usrImages img {
+    width: 80px !important;
+    height: 80px !important;
+    margin-top: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header .navBare nav {
+    width: auto !important;
+  }
+  header .navBare nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header .navBare nav ul li {
+    margin-left: 3rem !important;
+    margin-right: 0 !important;
+  }
+  header .navBare span {
+    margin-top: 2rem !important;
+  }
+  header .navBare .usrImages img {
+    margin-top: .5rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .catrContainer h2 {
+    font-size: 2rem !important;
+  }
+  .catrContainer .passportInfo {
+    width: 70vw !important;
+  }
+  .catrContainer .passportInfo .paddingInfp {
+    display: block !important;
+  }
+  .catrContainer .passportInfo .paddingInfp .info__1 span {
+    margin: 2rem 1rem !important;
+  }
+  .catrContainer .passportInfo .paddingInfp .info__1 input:not(:first-of-type) {
+    width: 61vw !important;
+    margin: 1rem 0 !important;
+  }
+  .catrContainer .passportInfo .paddingInfp .info__1 select {
+    width: 61vw !important;
+    margin: 2rem 0 !important;
+  }
+  .catrContainer .passportInfo .paddingInfp .dateInfoPassport input {
+    width: 61vw !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .catrContainer {
+    display: block !important;
+  }
+  .catrContainer .passportInfo {
+    width: 70vw !important;
+  }
+  .catrContainer .passportInfo .paddingInfp {
+    display: block !important;
+  }
+  .catrContainer .passportInfo .paddingInfp .info__1 span {
+    margin: 2rem 1rem !important;
+  }
+  .catrContainer .passportInfo .paddingInfp .info__1 input:not(:first-of-type) {
+    display: block !important;
+    width: 61vw !important;
+    margin: 1rem 0 !important;
+  }
+  .catrContainer .passportInfo .paddingInfp .info__1 select {
+    width: 61vw !important;
+    margin: 2rem 0 !important;
+  }
+  .catrContainer .passportInfo .paddingInfp .dateInfoPassport input {
+    width: 61vw !important;
+  }
+}
+
+.cartGrid {
+  margin: 1rem;
+}
+
+.cartGrid .passport .infpSpan {
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  margin-left: 2rem;
+}
+
+.cartGrid .passport .passportInfo .paddingInfp {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin: 1rem;
+}
+
+.cartGrid .passport .passportInfo .paddingInfp .info__1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.cartGrid .passport .passportInfo .paddingInfp .info__1 span {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.cartGrid .passport .passportInfo .paddingInfp .info__1 input:not(:first-of-type) {
+  width: 45%;
+  padding: 10px 15px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  margin-right: 1rem;
+  background: #645F5F;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.cartGrid .passport .passportInfo .paddingInfp .info__1 input:not(:first-of-type):placeholder-shown {
+  font-size: 2rem;
+}
+
+.cartGrid .passport .passportInfo .paddingInfp .info__1 select {
+  width: 19%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.cartGrid .passport .passportInfo .paddingInfp .dateInfoPassport {
+  margin-top: 2rem;
+}
+
+.cartGrid .passport .passportInfo .paddingInfp .dateInfoPassport span {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.cartGrid .passport .passportInfo .paddingInfp .dateInfoPassport input {
+  width: 45%;
+  padding: 10px 15px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  margin-right: 1rem;
+  background: #645F5F;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.cartGrid .passport .passportInfo .paddingInfp .dateInfoPassport input:placeholder-shown {
+  font-size: 2rem;
+}
+
+
+.addPassPortForm{
+  width: 70%;
+  margin: 4rem auto;
+
+}
+.addPassPortForm div{
+  display: flex;
+}
+.addPassPortForm div lable{
+  flex: 3;
+  color: #fff;
+  font-weight: 400;
+}
+.addPassPortForm div input{
+  flex: 9;
+  padding: 7px 15px;
+}
+
+.addpp{
+  padding: 8px 17px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}

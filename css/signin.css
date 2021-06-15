@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.container {
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  padding: 0;
+}
+
+header {
+  background: #CAC531;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo{
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+.logo svg{
+  width: 100%;
+}
+header .headerContainer {
+  display: block;
+  background: #645F5F;
+  width: 80%;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+
+.mainIncludeAndImge{
+  display: flex;
+}
+.mainIncludeAndImge .form{
+ flex: 1;
+ height: 100%;
+ /* margin-top: 3rem; */
+ padding-top: 5rem;
+}
+.mainIncludeAndImge .form form{
+  margin-top: 2rem;
+}
+.mainIncludeAndImge .form form p{
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+.mainIncludeAndImge .form form p a{
+  color: #fff;
+  text-decoration: underline;
+}
+.mainIncludeAndImge .form h2{
+  text-transform: uppercase;
+  text-align: center;
+  color: #CAC531;
+  margin-bottom: 3rem;
+}
+.mainIncludeAndImge .form input{
+  display: block;
+  width: 80%;
+  margin: 4rem auto;
+  padding: 1.5rem 1.8rem;
+  border-radius: 5px;
+  border: none;
+ 
+}
+.mainIncludeAndImge .form .submit{
+  background-color: #CAC531;
+  cursor: pointer;
+  color: #645F5F;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.mainIncludeAndImge .img{
+  flex: 1;
+  height: 100%;
+}
+.mainIncludeAndImge .img img{
+  width: 100%;
+  height: 90vh;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}

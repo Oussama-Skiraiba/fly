@@ -1,0 +1,31 @@
+.all_con{
+    text-align: center;
+}
+.paymentcartCon{
+    height: 500px;
+    width: 300px;
+    margin: 60px auto;
+}
+.paymentcartCon .imagCon{
+  
+}
+.paymentcartCon .imagCon img{
+    height: 300px;
+}
+.paymentcartCon .imagCon h1{
+    margin: 40px 0;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+.payBtn{
+    padding: 9px 16px;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #333;
+    font-weight: 500;
+}
+.payBtn:hover{
+    background-color: #333;
+    color: #fff;
+}

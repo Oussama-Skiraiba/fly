@@ -1,0 +1,54 @@
+@import "../varaible/colore";
+@import "../sab/body";
+@import "admin";
+.remove {
+    margin: 9rem 19rem 3rem;
+    width: 70%;
+    background: $BackgroundCartAdmin;
+    height: 80vh; margin-top: 17rem;
+    margin-left: 29rem;
+    background: $BackgroundCartAdmin ;
+    width: 70%;
+    color: $white;
+    border-radius: 10px;
+    // height: 65vh;
+    h2{
+        color: $white;
+        padding: 20px 0;
+        margin-left: 40px;
+    }
+    hr{
+        border: .1px solid rgba(190, 190, 190, 0.335);
+    }
+    .content-remove {
+        width: 90%;
+        min-height: 1px;
+        margin: 1rem auto;
+        
+        .head ,.row{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width: 100%;
+            
+            >div{
+                cursor: pointer;
+                width: 95%;
+                background: $HeaderBackground;
+                padding: 10px 15px;
+                border-radius: 4px;
+                text-align: center;
+                color: $white;
+            }
+            
+        }
+        .row {
+            padding: 5px 0;
+            >div {
+                color:#000000e3;
+                background: #f3e5e5;
+            }
+        }
+    }
+}
+
+

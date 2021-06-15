@@ -1,0 +1,93 @@
+@import "../varaible/colore";
+
+
+.stepBorder {
+    display: inline-block;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    position: relative;
+    .st {
+        color: $white;
+    }
+    span {
+        border-radius: 50%;
+        background: $Border;
+        color: $ColorPremierAndBackground;
+        border: 1px solid $Border;
+        margin: 0 1rem;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::after{
+            content: "";
+            position: absolute;
+            height: 30%;
+            border-bottom: 5px solid #707070;
+            border-radius: 3px;
+            right: 17.5%;
+            z-index: -1;
+            width: 65%;
+            
+        }
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     width: 45%;
+        //     height: 30%;
+        //     border-bottom: 5px solid $Border;
+        //     border-radius: 3px;
+        //     right:3.5%;
+        //     z-index: -1;
+        // }
+    }
+    
+}
+
+.catrContainer {
+    
+    width: 90%;
+    // height: 90vh;
+    min-height: 60vh;
+    background: $FotterBackgroundSocialMedia;
+    margin: 4rem auto 2rem;
+    border-radius: 20px;
+    box-shadow: rgba(100, 95, 95, 0.16) 0px 3px 6px, rgba(100, 95, 95, 0.23) 0px 3px 6px;
+        h2 {
+            text-align: center;
+            font-size: 4rem;
+            letter-spacing: 3px;
+            text-transform: capitalize;
+            font-weight: bold;
+            color: $HeaderBackground;
+            padding-top: 2rem;
+        }
+}
+
+.next {
+    position: absolute;
+    // bottom: -30%;
+    right: 10%;
+    width: 150px ;
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    background: $HeaderBackground;
+    color: $white;
+    transition: transform .7s ease-in;
+    text-align: center;
+    z-index: 10;
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+}

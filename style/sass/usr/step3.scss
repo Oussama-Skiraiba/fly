@@ -1,0 +1,53 @@
+@import "../sab/body";
+@import "../step/StepHeader";
+@import "../step/StepMain";
+@import "../step/StepFotter";
+@import "../mediaQuery/step/HeaderStepMedia";
+@import "../mediaQuery/step/step3Container";
+
+
+.cartGrid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 3rem;
+    span{
+        display: block;
+        color: $white;
+        font-size: 3rem;
+        margin: 0 2rem;
+    }
+    input {
+        width: 71%;
+        margin: 0 2rem;
+        padding: 10px 15px;
+        background: $FotterBackgroundSocialMedia;
+        border: 1px solid $Border;
+        border-radius: 10px;
+        color: $white;
+        font-size: 2rem;
+        &:placeholder-shown{
+            font-size: 2rem;
+        }
+    }
+}
+.dataCart {
+    margin: 3rem;
+    padding: 1rem;
+    span{
+        display: block;
+        color: $white;
+        font-size: 3rem;
+        margin: 0 2rem;
+    }
+    input{
+        width: 10%;
+        margin: 0 2rem;
+        padding: 10px 15px;
+        background: $FotterBackgroundSocialMedia;
+        border: 1px solid $Border;
+        border-radius: 10px;
+        color: $white;
+        font-size: 2rem;
+
+    }
+}

@@ -1,0 +1,90 @@
+@import "../varaible/colore";
+header {
+    position: relative;
+    .custom-shape-divider-top-1619315220 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+    }
+
+.custom-shape-divider-top-1619315220 svg {
+        position: relative;
+        display: block;
+        width: calc(133% + 1.3px);
+        height: 180px;
+    }
+
+    .custom-shape-divider-top-1619315220 .shape-fill {
+        fill: #CAC531;
+    }
+
+    .navBare {
+        // width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        margin: 0 1rem;
+
+        
+        .imagesLogo {
+            position: absolute;
+            left: 20px;
+            img {
+                height: 95px;
+            }
+        }
+        nav {
+            width: 40%;
+            margin: auto;
+            .menu {
+                display: none;
+            }
+            .show {
+                right: -56%;
+                background: $ColorTitle;
+                box-shadow: 0px 0px 5px rgb(37, 32, 32);
+                z-index: 10;
+            }
+            
+            ul {
+                margin: 0;
+                text-align: center;
+                li{
+                    display: inline-block;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    margin-right: 9rem;
+                    a {
+                        color: $ColorPremierAndBackground;
+                    }
+                }
+            }
+        }
+        span{
+            font-size: 3rem;
+            font-weight: bold;
+            display: block;
+            color: $ColorPremierAndBackground;
+            margin-top: 1rem;
+            
+        }
+    
+        .usrImages {
+            width: 16%;
+            
+            img{
+                width: 100px;
+                border-radius: 50%;
+                height: 100px;
+                float: right;
+                margin-right: 6rem;
+            }
+        }
+    
+    }
+}

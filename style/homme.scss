@@ -1,0 +1,425 @@
+@import "sass/sab/body";
+@import "sass/header/header";
+
+
+// State loade
+// 
+.scroleHeadin {
+    overflow: hidden;
+}
+
+.loade {
+    position: fixed;
+    width: calc(100% + 2.5rem);
+    height: calc(100% + 2.5rem);
+    background: $HeaderBackground;
+    z-index: 20;
+    top: -2.5rem;
+    left: -2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    *{
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // animation-name: load;
+        // animation-iteration-count: infinite;
+        // animation-timing-function: linear;
+
+    }
+
+    .div1 {
+        width: 180px;
+        height: 180px;
+        border-color: $ColorTitle transparent;
+        animation: load 1.5s infinite linear;
+
+        .div2 {
+            width: 120px;
+            height: 120px;
+            border-color: white transparent;
+            animation: load2 1s infinite linear;
+            .div3 {
+                width: 60px;
+                height: 60px;
+                border-color: $Border transparent;
+                animation-direction: reverse;
+                animation: load .5s infinite linear;
+            }
+        }
+    }
+    @keyframes load{
+        0%{
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes load2{
+        0%{
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+}
+// End loade
+
+
+
+
+
+/*Start Hrader */
+.svgHeader{
+    position: absolute;
+    bottom: 14%;
+    z-index: -1;
+    // svg {
+    //     width: calc(100% - 2.5rem);
+        
+    // }
+}
+header {
+    position: relative;
+    height: 60vh;
+    background: $HeaderBackground;
+    .titel {
+        padding: 1rem;
+        margin: 2rem 0 0 2rem;
+        color: $ColorTitle;
+        width: 40%;
+        .titlePremier {
+            display: block;
+            font-size: 7rem;
+            letter-spacing: 6px;
+        }
+        .titleSeconde {
+            display: block;
+            margin-left: 1rem;
+            font-size: 3rem;
+            letter-spacing: 10px;
+        }
+        .textHeader {
+            margin-left: 1rem;
+            font-size: 1.5rem;
+            p{
+                line-height: 1.8;
+            }    
+        }
+    }
+
+    .loginHeader {
+        position: absolute;
+        width: 25%;
+        height: 85vh;
+        background: #fff;
+        right: 3%;
+        top: 9%;
+        border: 3px solid $ColorTitle;
+        border-radius: 10px;
+        .loginContainer {
+            width: 80%;
+            margin: 1rem auto;
+            .input {
+                input , select{
+                    width: 100%;
+                    margin: 1rem 0;
+                    padding: 10px 15px;
+                    border: 1px solid $ColorTitle;
+                    border-radius: 10px;
+                }
+                label {
+                    display: block;
+                    font-size: 2rem;
+                }
+            }
+            .radoi {
+                label {
+                    margin-left: 1rem;
+                }
+            }
+            .btnSreash {
+                button {
+                    display: block;
+                    width: 100%;
+                    margin: 1rem 0;
+                    padding: 10px 15px;
+                    border: 1px solid $ColorTitle;
+                    border-radius: 10px;
+                    background: $ColorPremierAndBackground;
+                    color: $white;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .searchMedia {
+        display: none;
+    }
+}
+
+/*End Hrader */
+
+.margin {
+    padding: 10rem 0;
+}
+
+/*Start Main */
+
+.main {
+    width: 90%;
+    margin: auto; 
+    // padding-top: 3rem;
+    .mainContainer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        // display: flex;
+        padding-top: 7rem;
+        .mainDiv {
+            margin: 1rem 0 0 1rem;
+            img {
+                width: 20%;
+                display: block;
+                margin: auto;
+            
+            }
+            p {
+                font-size: 2rem;
+                margin: 1rem ;
+                text-align: center;
+                color: $ColorPremierAndBackground;
+            }
+        }
+    }
+}
+
+/*End Main */
+
+/* Start Catgori*/
+.catgori {
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .catrContainer {
+        margin-top: 6rem;
+        // width: (100% /3);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card {
+            
+            height: 420px;
+            width: 379px;
+            transform-style:preserve-3d;
+            position: relative;
+            cursor: pointer;
+            margin-bottom: 5rem;
+        
+            // &:not(:first-of-type){
+            //     margin-left: 2rem;
+            // }
+            .front ,.back {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 90%;
+                overflow: hidden;
+                backface-visibility: hidden;
+                transition: transform 1s linear;
+                border-radius: 10px;
+            }
+            .front {
+                transform: perspective(800px) rotateY(0deg);
+                img {
+                    height: 420px;
+                    width: 379px;
+                }
+            }
+            .back{
+                text-align: center;
+                background: $ColorPremierAndBackground;
+                // border-radius: 10px;
+                color: $white;
+                padding: 2rem 1rem;
+                transform: perspective(800px) rotateY(180deg);
+                .nameLoacition {
+                    font-size: 3rem;
+                    padding: 1rem;
+                }
+                .priceTravel {
+                    color: $HeaderBackground;
+                    transition: 1s ease-in;
+                }
+                .info {
+                    display: block;
+                    margin: 3rem;
+                    line-height: 2;
+                    color:$Border;
+                    &:hover {
+                        color: $HeaderBackground;
+                    }
+                }
+            }
+            &:hover > .front{
+                transform: perspective(800px) rotateY(-180deg);
+            }
+            &:hover > .back{
+                transform: perspective(800px) rotateY(0deg);
+            }
+        }
+    }
+}
+/* End Catgori*/
+
+/* Start leadingCompain*/
+.leadingCompain {
+    padding-bottom: 10rem;
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        font-weight: bold;
+        span {
+            display: block;
+        }
+    }
+
+    .leadingCompainContainer {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
+        // &:not(:first-of-type){
+        //     margin-left: 2rem;
+        // }
+        img {
+            width: 50%;
+            margin: auto;
+        }
+    }
+}
+/* End leadingCompain*/
+
+/*Start Clientes*/
+
+.clientes {
+    padding-top: 7rem;
+    position: relative;
+    color: $white;
+    background: $ColorPremierAndBackground;
+    
+    .svgClientes {
+        position: absolute;
+        top: -40%;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        // svg {
+        //     width: 100%;
+        // }
+    }
+    .svgClientBottom {
+        position: absolute;
+        bottom: -44%;
+        width: 100%;
+    }
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .clientesContainer {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-top: 5rem ;
+        .clinet {
+            width: 400px;
+            margin: auto;
+            padding-top: 3rem;
+            img {
+                width: 50%;
+                margin: 1rem auto;
+                display: block;
+                border: 5px solid $white;
+                border-radius: 50%;
+            }
+            .clinetName {
+                display: block;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+                padding: 1rem;
+            }
+            .clinetInfo {
+                display: block;
+                margin: 1rem;
+                text-align: center;
+                padding: 2rem;
+            }
+        }
+    }
+}
+/*End Clientes*/
+
+/*Start Contact*/
+.contact {
+    margin-top: 8rem;
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 3rem;
+    }  
+    .contactContainer {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .contactInfo {
+            margin-left: 8rem;
+            .send {
+                font-size: 2rem;
+                background-color: $ColorPremierAndBackground;
+                color: $white;
+            }
+            input ,#textarea,.send{
+                display: block;
+                width: 80%;
+                margin-bottom: 3rem;
+                padding: 10px 15px;
+                border: 1px solid $ColorPremierAndBackground;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+/*End Contact*/
+
+
+// @media (max-width: 767px) {
+//     header {
+//         background: red !important;
+//         height: 30vh !important;
+//         width: 60%;
+//     }
+// }
+@import "sass/fotter/fotter";
+@import "sass/mediaQuery/homePage";

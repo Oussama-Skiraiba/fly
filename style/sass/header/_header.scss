@@ -1,0 +1,99 @@
+@import "../varaible/colore";
+.headerBackground {
+    display: flex;
+    margin-top: -1.5rem;
+    .logo {
+        width: 10%;
+        img {
+            height: 100px;
+        }
+    }
+    .nav {
+        width: 70%;
+        margin: 2rem auto 0;
+        position: relative;
+        .borger {
+            display: none;
+            position: absolute;
+            right: -10%;
+        }
+        .showMenu {
+            right: -10%;
+            background: $ColorTitle;
+            box-shadow: 0px 0px 5px rgb(37, 32, 32);
+            z-index: 10;
+        }
+        ul {
+            margin-left: -6rem;
+            padding: 1rem;
+            transition: opacity .7s ease-in;
+            li {
+                display: inline-block;
+                a {
+                    color: $ColorTitle;
+                    font-size: 2.5rem;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    margin: 0 1rem;
+                    position: relative;
+                    &:hover {
+                        &::after {
+                            background: $ColorTitle;
+                            left: 0;
+                            width: 100%;
+                            opacity: 1;
+                        }
+                        &::before {
+                            right: 8%;
+                            background: rgba(68, 64, 64, 0.705);
+                            width: 100%;
+                            opacity: 1;
+                        }
+                    }
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        width: 20%;
+                        height: 10px;
+                        bottom: -20%;
+                        transition: all .7s ease-in;
+                        border-radius: 20px;
+                        opacity: .1;
+                        transition-delay: .2s;
+                    }
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        right: 0;
+                        width: 20%;
+                        height: 10px;
+                        bottom: -20%;
+                        transition: all .7s ease-in;
+                        border-radius: 20px;
+                        opacity: .1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btnHeader {
+    
+    width: 20%;
+    margin: 2rem auto 0;
+    .singIn {
+        margin-right: 1rem;
+        background: $ColorPremierAndBackground;
+        // color: $HeaderBackground;
+    }
+        button {
+        padding:  15px;
+        font-size: 2rem;
+        border: 1px solid $ColorPremierAndBackground;
+        border-radius: 10px;
+        background: none;
+        color: $white;
+    }
+}
